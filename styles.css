@@ -1,0 +1,39 @@
+#tortuga{
+    height: 800px; 
+    width: 800px;
+    background-image: url('./img/tortuga.GIF');
+    display: none;
+}
+#dormitorio{
+    height: 392px; 
+    width: 500px;
+    background-image: url('./img/IMG-0699.GIF');
+    display: none;
+}
+#armario{
+    height: 458px; 
+    width: 472px;
+    background-image: url('./img/unnamed.gif');
+    display: none;
+}
+
+#error{
+    height: 270px;
+    width: 480px;
+    background-image: url('./img/giphy.GIF');
+    display: none
+}
+
+
+html {
+    font-family:impact
+
+}
+body {
+    background-color: red;
+}
+
+h1 {
+    font-size: 40px;
+}
+
