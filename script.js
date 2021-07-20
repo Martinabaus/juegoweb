@@ -38,6 +38,23 @@ function chequeoLetra(item) {
 
 }
 
+
+/**
+ * funcion para reseater el juego
+ */
+function resetJuego() {
+
+    let reiniciar = window.confirm("Quieres jugar nuevamente?");
+
+    if (reiniciar) {
+        location.reload()
+    } else {
+        window.alert("Gracias por jugar este juego bonito. Adios")
+    }
+
+}
+
+
 // defino variable para guardar letras que el usurio da. esta variable se reseat cada vez que se 
 // recarga la pagina
 let letrasUsuario = "";
@@ -106,17 +123,20 @@ document.querySelector('#calcular').addEventListener('click', () => {
                 
                 document.getElementById('dormitorio').style.display = "block";
                 // resetear el juego con un alert
+                resetJuego()
             
             } else if (palabraConGuiones === "a r m a r i o ") {
             
                 document.getElementById('armario').style.display = "block";
                 // resetear el juego con un alert
+                resetJuego()
 
                 
             } else if (palabraConGuiones === "t o r t u g a ")  {                
             
                 document.getElementById('tortuga').style.display = "block";
                 // resetear el juego con un alert
+                resetJuego()
 
                 
             } 
